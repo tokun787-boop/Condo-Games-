@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Condo Games - Private Servers</title>
+    <!-- Google Fonts & FontAwesome untuk Ikon -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -22,6 +23,7 @@
             overflow-x: hidden;
         }
 
+        /* --- LOADING SCREEN --- */
         #loading-screen {
             position: fixed;
             top: 0;
@@ -125,11 +127,13 @@
         @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
         @keyframes spin-reverse { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
 
+        /* --- MAIN APP CONTENT --- */
         #app-content {
             display: none;
             padding-bottom: 40px;
         }
 
+        /* Navbar */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -175,6 +179,7 @@
             -webkit-text-fill-color: transparent;
         }
 
+        /* Hero Banner Section */
         .hero-banner {
             margin: 15px 15px 25px 15px;
             background: linear-gradient(180deg, rgba(26, 21, 48, 0.6) 0%, rgba(15, 13, 26, 0.9) 100%);
@@ -262,6 +267,7 @@
             color: #9ca3af;
         }
 
+        /* Section Title */
         .section-header {
             display: flex;
             justify-content: space-between;
@@ -288,6 +294,7 @@
             color: #9ca3af;
         }
 
+        /* Server List Container */
         .server-list {
             display: flex;
             flex-direction: column;
@@ -295,6 +302,7 @@
             padding: 0 15px;
         }
 
+        /* Server Card */
         .server-card {
             background: #13111f;
             border: 1px solid rgba(255, 255, 255, 0.06);
@@ -344,6 +352,7 @@
             letter-spacing: 0.5px;
         }
 
+        /* List Avatar Pemain */
         .server-players-container {
             display: flex;
             align-items: center;
@@ -373,6 +382,7 @@
             white-space: nowrap;
         }
 
+        /* Join Button */
         .join-btn {
             display: block;
             width: 100%;
@@ -417,6 +427,7 @@
 
     <!-- MAIN APP -->
     <div id="app-content">
+        <!-- Navbar -->
         <header class="navbar">
             <div class="nav-brand">
                 <div class="brand-icon">
@@ -426,14 +437,17 @@
             </div>
         </header>
 
-        <!-- Hero Section dengan Video -->
+        <!-- Hero Section dengan VIDEO -->
         <div class="hero-banner">
             <div class="hero-image-wrapper">
                 <span class="live-badge">LIVE</span>
-                <!-- MENGGUNAKAN VIDEO MP4 -->
+                
+                <!-- VIDEO DI HERO BANNER -->
                 <video autoplay loop muted playsinline>
                     <source src="images/vidio.mp4" type="video/mp4">
+                    Browser Anda tidak mendukung video.
                 </video>
+                
                 <div class="roblox-avatar-container">
                     <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A4F764CB5B7A62140A826DCBA9EE5F7E-Png/150/150/AvatarHeadshot/Webp/noFilter" alt="Roblox Avatar" class="roblox-avatar-img">
                     <div class="roblox-avatar-name">Bot: Ayeshaspillbox</div>
@@ -445,6 +459,7 @@
             </div>
         </div>
 
+        <!-- Section Title Private Servers -->
         <div class="section-header">
             <div class="section-title">
                 <i class="fa-solid fa-gem"></i> Private Servers
@@ -454,7 +469,9 @@
             </div>
         </div>
 
+        <!-- Daftar Server -->
         <div class="server-list">
+            
             <!-- Server 01 -->
             <div class="server-card">
                 <div class="server-thumbnail">
@@ -463,12 +480,14 @@
                 </div>
                 <div class="server-info">
                     <div class="server-name">Server 01</div>
+                    
                     <div class="server-players-container">
                         <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-A4F764CB5B7A62140A826DCBA9EE5F7E-Png/150/150/AvatarHeadshot/Webp/noFilter" class="player-avatar" alt="Player">
                         <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-456E27ADA99A21CADD2590306EE214A6-Png/150/150/AvatarHeadshot/Webp/noFilter" class="player-avatar" alt="Player">
                         <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-E5988C142C147FC9D3D0DA0C7736C712-Png/150/150/AvatarHeadshot/Webp/noFilter" class="player-avatar" alt="Player">
                         <span class="player-count-text">14 / 20 Online</span>
                     </div>
+
                     <a href="https://www.roblox.com/games/mulai-link-roblox-anda-disini" class="join-btn" target="_blank">JOIN SERVER</a>
                 </div>
             </div>
@@ -481,17 +500,21 @@
                 </div>
                 <div class="server-info">
                     <div class="server-name">Server 02</div>
+                    
                     <div class="server-players-container">
                         <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-0C6CBD98ADBB8879842179209E12BF5D-Png/150/150/AvatarHeadshot/Webp/noFilter" class="player-avatar" alt="Player">
                         <img src="https://tr.rbxcdn.com/30DAY-AvatarHeadshot-2968EC43814C0D3ACB51889553F6F0D5-Png/150/150/AvatarHeadshot/Webp/noFilter" class="player-avatar" alt="Player">
                         <span class="player-count-text">2 / 20 Online</span>
                     </div>
+
                     <a href="https://www.roblox.com/games/mulai-link-roblox-anda-disini" class="join-btn" target="_blank">JOIN SERVER</a>
                 </div>
             </div>
+
         </div>
     </div>
 
+    <!-- Script Animasi Loading -->
     <script>
         let width = 0;
         const bar = document.getElementById('loading-bar');
